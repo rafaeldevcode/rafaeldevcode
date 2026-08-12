@@ -207,8 +207,8 @@ Desenvolvimento de soluções web sob medida para clientes, incluindo sites inst
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=rafaeldevcode&show_icons=true&count_private=true&include_all_commits=true&hide_border=false&bg_color=0D1117&title_color=A78BFA&icon_color=818CF8&text_color=C9D1D9&border_color=30363D&locale=pt-br" alt="Estatísticas do GitHub" height="180" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rafaeldevcode&layout=compact&hide_border=false&bg_color=0D1117&title_color=A78BFA&text_color=C9D1D9&border_color=30363D&locale=pt-br" alt="Linguagens mais usadas" height="180" />
+<img src="https://github-readme-stats.vercel.app/api?username=rafaeldevcode&show_icons=true&count_private=true&hide_border=false&bg_color=0D1117&title_color=A78BFA&icon_color=818CF8&text_color=C9D1D9&border_color=30363D&locale=pt-br&cache_seconds=86400" alt="Estatísticas do GitHub" height="180" />
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rafaeldevcode&layout=compact&hide_border=false&bg_color=0D1117&title_color=A78BFA&text_color=C9D1D9&border_color=30363D&locale=pt-br&cache_seconds=86400" alt="Linguagens mais usadas" height="180" />
 
 <br/><br/>
 
@@ -222,7 +222,7 @@ Desenvolvimento de soluções web sob medida para clientes, incluindo sites inst
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=rafaeldevcode&theme=dracula&no-frame=true&column=7&margin-w=8&margin-h=8" alt="Troféus GitHub" />
+<img src="https://github-profile-trophy.vercel.app/?username=rafaeldevcode&theme=dracula&no-frame=true&no-bg=false&column=4&row=2&margin-w=8&margin-h=8" alt="Troféus GitHub" />
 
 </div>
 
