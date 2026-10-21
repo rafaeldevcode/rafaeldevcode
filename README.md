@@ -17,7 +17,7 @@
 
 <br/><br/>
 
-<img src="https://komarev.com/ghpvc/?username=rafaeldevcode&style=flat-square&color=6D28D9&label=Visualiza%C3%A7%C3%B5es" alt="Visualizações do perfil" />
+<img src="https://visitor-badge.laobi.icu/badge?page_id=rafaeldevcode.rafaeldevcode&left_color=%230D1117&right_color=%236D28D9&left_text=Visualiza%C3%A7%C3%B5es" alt="Visualizações do perfil" />
 <img src="https://img.shields.io/github/followers/rafaeldevcode?style=flat-square&color=4F46E5&labelColor=0D1117&label=Seguidores" alt="Seguidores" />
 <img src="https://img.shields.io/github/stars/rafaeldevcode?style=flat-square&color=7C3AED&labelColor=0D1117&label=Stars" alt="Total de stars" />
 
