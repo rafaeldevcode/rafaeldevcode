@@ -1,0 +1,48 @@
+# Gera os SVGs de troféus (achievements) e atividade (isocalendar) em metrics/
+name: Generate Metrics
+
+on:
+  schedule:
+    - cron: "0 3 * * *" # diariamente às 03:00 UTC
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/metrics.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: metrics
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Achievements
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/achievements.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_message: "chore: update achievements metrics [skip ci]"
+          base: ""
+          config_timezone: America/Sao_Paulo
+          plugin_achievements: yes
+          plugin_achievements_display: compact
+          plugin_achievements_threshold: C
+          plugin_achievements_secrets: yes
+
+      - name: Activity calendar
+        uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/isocalendar.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          committer_message: "chore: update activity metrics [skip ci]"
+          base: ""
+          config_timezone: America/Sao_Paulo
+          plugin_isocalendar: yes
+          plugin_isocalendar_duration: full-year

@@ -207,7 +207,7 @@ Desenvolvimento de soluções web sob medida para clientes: sistemas internos, p
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=rafaeldevcode&theme=dracula&no-frame=true&no-bg=false&column=4&row=2&margin-w=8&margin-h=8" alt="Troféus GitHub" />
+<img src="metrics/achievements.svg" alt="Troféus GitHub" />
 
 </div>
 
@@ -217,7 +217,7 @@ Desenvolvimento de soluções web sob medida para clientes: sistemas internos, p
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=rafaeldevcode&bg_color=0D1117&color=C9D1D9&line=7C3AED&point=A78BFA&area=true&area_color=4F46E5&hide_border=false&border_color=30363D" alt="Gráfico de atividade" width="95%" />
+<img src="metrics/isocalendar.svg" alt="Calendário de atividade" width="95%" />
 
 </div>
 
