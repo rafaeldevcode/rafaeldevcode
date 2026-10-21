@@ -27,9 +27,9 @@
 
 ## 👨‍💻 Sobre
 
-Engenheiro **Backend / Full Stack Sênior** com mais de **5 anos de experiência** (desde 2021) construindo e escalando plataformas **SaaS multi-tenant** de ponta a ponta. Especializado em **backend em escala** com Django REST, **processamento distribuído e assíncrono** (filas, workers e agendamento de tarefas) e **integrações robustas com APIs de terceiros** — OAuth, webhooks e ecossistemas de marketplace.
+Engenheiro **Backend / Full Stack Sênior** com mais de **5 anos de experiência** (desde 2021) construindo e escalando plataformas **SaaS multi-tenant** de ponta a ponta. Especializado em **backend em escala** com Django REST, **processamento distribuído e assíncrono** (Celery, filas, workers e agendamento de tarefas) e **integrações robustas com APIs de terceiros** — Shopify, Amazon SP-API & Ads, Meta/WhatsApp, QuickBooks, Stripe, Plaid e muitas outras.
 
-Atuo em todo o ciclo de entrega de produto: da modelagem do domínio e arquitetura da API até interfaces modernas com **Next.js**, sempre com **mentalidade de engenharia de produto** — cada decisão técnica orientada a impacto real para o usuário e para o negócio.
+Atuo em todo o ciclo de entrega de produto: da modelagem do domínio e arquitetura da API até interfaces modernas com **Next.js**, passando por infraestrutura com **Docker, Kubernetes e AWS**. Nos últimos anos venho levando **IA para dentro dos produtos** — servidores **MCP** com centenas de ferramentas, copilotos com tool use e RAG — sempre com **mentalidade de engenharia de produto**: cada decisão técnica orientada a impacto real para o usuário e para o negócio.
 
 **🚀 Aberto a:**
 
@@ -45,23 +45,23 @@ Atuo em todo o ciclo de entrega de produto: da modelagem do domínio e arquitetu
 
 **Linguagens**
 
-<img src="https://skillicons.dev/icons?i=python,js,ts,php,bash&theme=dark" alt="Linguagens" />
+<img src="https://skillicons.dev/icons?i=python,ts,js,php,bash&theme=dark" alt="Linguagens" />
 
-**Frontend**
+**Frontend & Mobile**
 
-<img src="https://skillicons.dev/icons?i=nextjs,react,tailwind,html,css,sass&theme=dark" alt="Frontend" />
+<img src="https://skillicons.dev/icons?i=nextjs,react,tailwind,html,css,sass,tauri&theme=dark" alt="Frontend e Mobile" />
 
 **Backend & Bancos de Dados**
 
-<img src="https://skillicons.dev/icons?i=django,nodejs,laravel,postgres,mysql,mongodb,redis&theme=dark" alt="Backend e Bancos de Dados" />
+<img src="https://skillicons.dev/icons?i=django,fastapi,flask,nodejs,laravel,prisma,postgres,mysql,mongodb,redis,elasticsearch&theme=dark" alt="Backend e Bancos de Dados" />
 
 **Cloud, DevOps & Ferramentas**
 
-<img src="https://skillicons.dev/icons?i=aws,docker,nginx,linux,git,github,githubactions&theme=dark" alt="Cloud, DevOps e Ferramentas" />
+<img src="https://skillicons.dev/icons?i=aws,gcp,docker,kubernetes,nginx,linux,git,github,githubactions&theme=dark" alt="Cloud, DevOps e Ferramentas" />
 
 **Integrações & APIs**
 
-<img src="https://skillicons.dev/icons?i=graphql,postman,rabbitmq,cloudflare&theme=dark" alt="Integrações e APIs" />
+<img src="https://skillicons.dev/icons?i=graphql,postman,cloudflare,firebase&theme=dark" alt="Integrações e APIs" />
 
 </div>
 
@@ -71,57 +71,86 @@ Atuo em todo o ciclo de entrega de produto: da modelagem do domínio e arquitetu
 
 | Domínio | Proficiência | Detalhes |
 |---|---|---|
-| Arquitetura SaaS Multi-tenant | ▰▰▰▰▰ Avançado | Isolamento de tenants, provisionamento, billing e escalabilidade horizontal |
-| Processamento Distribuído & Assíncrono | ▰▰▰▰▰ Avançado | Filas, workers, agendamento de tarefas e pipelines resilientes |
-| Integração com APIs de Terceiros | ▰▰▰▰▰ Avançado | Marketplaces, OAuth 2.0, webhooks e sincronização de dados |
-| Sistemas Realtime (WebSockets / ASGI) | ▰▰▰▰▱ Proficiente | Notificações em tempo real e canais bidirecionais com Django Channels |
-| Data Pipelines & Relatórios | ▰▰▰▰▱ Proficiente | ETL, agregações e dashboards analíticos orientados a decisão |
-| AI Agents & Tooling (MCP, automação com LLM) | ▰▰▰▱▱ Em evolução | Agentes com MCP e automações backed por LLMs |
-| Engenharia de Produto Frontend | ▰▰▰▰▱ Proficiente | Next.js, SSR/ISR, design systems e experiência do usuário |
+| Arquitetura SaaS Multi-tenant | ▰▰▰▰▰ Avançado | Banco por tenant (master + DB dedicado), roteamento dinâmico de conexões, template base versionado reaproveitado entre produtos |
+| Processamento Distribuído & Assíncrono | ▰▰▰▰▰ Avançado | Celery + Beat + Flower, 21 deployments de workers em produção, BullMQ, pipelines resilientes |
+| Integração com APIs de Terceiros | ▰▰▰▰▰ Avançado | Shopify, Amazon SP-API & Ads, Meta/WhatsApp, TikTok, QuickBooks, Plaid, Klaviyo, TaxJar, RingCentral, Stripe — OAuth 2.0 e webhooks |
+| AI Agents & Tooling (MCP, LLMs) | ▰▰▰▰▱ Proficiente | Servidores MCP com até 288 tools, OAuth (RFC 9728/7662), copilotos com tool use, RAG com Pinecone |
+| Sistemas Realtime | ▰▰▰▰▱ Proficiente | Django Channels/WebSockets, aulas ao vivo e chamadas com LiveKit, ingestão IoT via MQTT |
+| Segurança & Autenticação | ▰▰▰▰▱ Proficiente | JWT, MFA (TOTP), RBAC em camadas, HMAC, segredos criptografados (Fernet), secret scanning no CI |
+| Cloud & DevOps | ▰▰▰▰▱ Proficiente | Docker, Kubernetes (prod/staging/sandbox), GitHub Actions → EC2/ECR/EKS, AWS Lambda, SES e S3 |
+| Engenharia de Produto Frontend | ▰▰▰▰▱ Proficiente | Next.js (App Router), React 19, shadcn/ui, Tailwind, apps embedded Shopify, desktop com Tauri |
 
 ---
 
 ## 📂 Projetos em Destaque
 
-<!-- ⚠️ EXEMPLO — substitua os dois projetos abaixo por dados reais. Campos sem métrica real devem ficar como "—" -->
-
 <details>
-<summary><b>🟣 Omnize — Plataforma SaaS Multicanal</b> <i>(EXEMPLO — preencher com dados reais)</i></summary>
+<summary><b>🟣 FullySys — ERP & Back-office da AromaPlan</b></summary>
 
 <br/>
 
-Plataforma SaaS multi-tenant que centraliza **SMS, WhatsApp e Email** para roteamento e qualificação de leads, com integrações Meta/WhatsApp Business e automações de follow-up.
+ERP sob medida que sustenta a operação da **AromaPlan** (difusores de aroma): vendas, CRM, estoque, contabilidade, anúncios, afiliados, KPIs, IA e telemetria dos difusores conectados.
 
 | | |
 |---|---|
-| **Stack** | Next.js, Django REST, PostgreSQL, Redis, Celery, AWS |
-| **Escala** | — |
-| **Performance** | — |
-| **Segurança** | Autenticação JWT, isolamento por tenant, rate limiting |
-| **Impacto** | — |
+| **Stack** | Django REST, PostgreSQL, MongoDB, Redis, Celery, Channels, MQTT, Next.js, Kubernetes, AWS |
+| **Escala** | ~220 models em ~20 apps · 21 deployments de workers Celery em produção |
+| **Integrações** | Shopify, Amazon SP-API & Ads, TikTok, Klaviyo, QuickBooks, Plaid, RingCentral, TaxJar, Stripe, OpenAI, Anthropic |
+| **Contribuição** | Principal contribuidor do backend — 4.300+ commits |
 | **Repositório** | 🔒 Privado |
 
-Arquitetura orientada a eventos com workers assíncronos para envio em massa, garantindo entrega resiliente mesmo sob picos de tráfego. O isolamento por tenant permite provisionamento de novos clientes sem downtime.
+Inclui um servidor **MCP com 288 ferramentas em 14 categorias**, que expõe o ERP a assistentes de IA (Claude, etc.), e um app embedded na Shopify para sincronização de pedidos e catálogo.
 
 </details>
 
 <details>
-<summary><b>🟣 FinanSimu — Simuladores Financeiros</b> <i>(EXEMPLO — preencher com dados reais)</i></summary>
+<summary><b>🟣 DAOI Educação — Plataforma de Cursos & Aulas ao Vivo</b></summary>
 
 <br/>
 
-Portal de simuladores e conteúdo financeiro monetizado via display ads (Google Ad Manager), com segmentação de receita por campanha através de key-values mapeados a parâmetros UTM.
+Plataforma de educação com formações, aulas ao vivo, loja, afiliados, CRM, marketing e assistente de IA.
 
 | | |
 |---|---|
-| **Stack** | Next.js, Google Ad Manager, Cloudflare |
+| **Stack** | Django REST, PostgreSQL, MongoDB, Redis, Celery, Channels, LiveKit, Stripe, OpenAI, Kubernetes |
 | **Escala** | — |
-| **Performance** | — |
-| **Segurança** | — |
-| **Impacto** | — |
+| **Segurança** | OAuth2 provider, JWT, MCP com OAuth Protected Resource (RFC 9728) e token introspection (RFC 7662) |
+| **Contribuição** | Autor do backend desde o primeiro commit — ~1.700 commits |
 | **Repositório** | 🔒 Privado |
 
-Pipeline de atribuição de receita por campanha construído sobre UTMs e key-values do GAM, permitindo medir a lucratividade de aquisição de tráfego pago em tempo quase real.
+Vídeo ao vivo com LiveKit, cobrança recorrente com Stripe e módulo de IA com registro de providers, tools e prompts.
+
+</details>
+
+<details>
+<summary><b>🟣 Vordrix — Help Desk Multicanal com IA</b></summary>
+
+<br/>
+
+Help desk que unifica **email, WhatsApp, SMS e voz**, com base de conhecimento via **RAG** e billing integrado.
+
+| | |
+|---|---|
+| **Stack** | Django 6, DRF, PostgreSQL, MongoDB, Redis, Celery, Channels, Pinecone, AWS SES/S3/Lambda, Next.js |
+| **Arquitetura** | Banco por tenant, namespaces Pinecone isolados por tenant, RBAC em 3 camadas |
+| **Contribuição** | Liderei a migração do backend de FastAPI para Django em 23 etapas (~80 endpoints admin) |
+| **Repositório** | 🔒 Privado |
+
+</details>
+
+<details>
+<summary><b>🟣 Base Tenancy — Template SaaS Multi-tenant</b></summary>
+
+<br/>
+
+Template de referência **Django REST + Next.js** com **um banco de dados por tenant**, que serve de base para meus produtos SaaS — entre eles o **Boutique CRM** (gestão para revendedoras de cosméticos) e o **Easy Integrations** (hub de distribuição de leads para 8 providers).
+
+| | |
+|---|---|
+| **Stack** | Django 5, DRF, PostgreSQL, MongoDB, Celery, Redis, Channels, S3, Stripe, Next.js 16, Docker, Caddy |
+| **Arquitetura** | DB router master/tenant + middleware que registra conexões por requisição; releases versionadas (`base-vX.Y.Z`) sincronizadas com os produtos derivados |
+| **Segurança** | JWT, MFA (TOTP), API keys, HMAC, RBAC, segredos criptografados, Gitleaks no CI |
+| **Repositório** | 🔒 Privado |
 
 </details>
 
@@ -129,77 +158,33 @@ Pipeline de atribuição de receita por campanha construído sobre UTMs e key-va
 
 ## 💼 Experiência
 
-### 🔷 FullStack Developer — AromaPlan
-`<MMM AAAA> — Presente` <!-- ⚠️ preencher data de início -->
+### 🔷 Full Stack Developer — FullySense <i>(AromaPlan · DAOI · Vordrix · EasyManager)</i>
+`Ago 2024 — Presente`
 
-<!-- ⚠️ EXEMPLO — substituir resumo e bullets por dados reais -->
-Desenvolvimento full stack de plataforma SaaS, atuando do backend (APIs REST, processamento assíncrono, integrações) ao frontend em Next.js, com foco em entrega contínua de produto.
+Desenvolvimento full stack em um ecossistema de produtos SaaS, com foco em backend Django, integrações e infraestrutura.
 
-- Desenvolvimento e manutenção de APIs REST com Django
-- Integrações com serviços de terceiros (pagamentos, mensageria, marketplaces)
-- Interfaces de produto com Next.js e Tailwind
+- Principal contribuidor do backend do **FullySys**, o ERP da AromaPlan (4.300+ commits), com ~20 apps Django, IoT via MQTT e mais de 10 integrações de terceiros
+- Construí do zero o backend da **DAOI Educação**: cursos, aulas ao vivo com LiveKit, Stripe e módulo de IA
+- Liderei a migração do backend do **Vordrix** de FastAPI para Django, com multi-tenancy por banco e RAG com Pinecone
+- Desenvolvi servidores **MCP** que expõem os produtos a assistentes de IA (até 288 tools)
+- Backend do **Stardocker / EasyManager** (dashboard para sellers Amazon, Shopify e Walmart) e app Shopify de sincronização
+- Deploy com Docker, Kubernetes e GitHub Actions na AWS
 
-<img src="https://img.shields.io/badge/Next.js-0D1117?style=flat-square&logo=nextdotjs&logoColor=A78BFA" alt="Next.js" /> <img src="https://img.shields.io/badge/Django_REST-0D1117?style=flat-square&logo=django&logoColor=818CF8" alt="Django REST" /> <img src="https://img.shields.io/badge/PostgreSQL-0D1117?style=flat-square&logo=postgresql&logoColor=A78BFA" alt="PostgreSQL" /> <img src="https://img.shields.io/badge/AWS-0D1117?style=flat-square&logo=amazonwebservices&logoColor=818CF8" alt="AWS" />
+<img src="https://img.shields.io/badge/Django_REST-0D1117?style=flat-square&logo=django&logoColor=818CF8" alt="Django REST" /> <img src="https://img.shields.io/badge/Next.js-0D1117?style=flat-square&logo=nextdotjs&logoColor=A78BFA" alt="Next.js" /> <img src="https://img.shields.io/badge/Celery-0D1117?style=flat-square&logo=celery&logoColor=818CF8" alt="Celery" /> <img src="https://img.shields.io/badge/PostgreSQL-0D1117?style=flat-square&logo=postgresql&logoColor=A78BFA" alt="PostgreSQL" /> <img src="https://img.shields.io/badge/Kubernetes-0D1117?style=flat-square&logo=kubernetes&logoColor=818CF8" alt="Kubernetes" /> <img src="https://img.shields.io/badge/AWS-0D1117?style=flat-square&logo=amazonwebservices&logoColor=A78BFA" alt="AWS" />
 
 <br/>
 
-### 🔷 Full Stack Developer — Pegasus Web Solutions <i>(EXEMPLO — confirmar/substituir)</i>
-`<MMM AAAA> — <MMM AAAA>` <!-- ⚠️ preencher período -->
+### 🔷 Fundador & Full Stack Developer — Pegasus Web Solutions
+`2022 — Presente`
 
-<!-- ⚠️ EXEMPLO — substituir resumo e bullets por dados reais -->
-Desenvolvimento de soluções web sob medida para clientes, incluindo sites institucionais, e-commerces e sistemas internos, com responsabilidade de infraestrutura e deploy.
+Desenvolvimento de soluções web sob medida para clientes: sistemas internos, painéis administrativos, sites institucionais e produtos SaaS próprios.
 
-- Desenvolvimento de aplicações web completas (backend e frontend)
-- Gestão de infraestrutura de servidores (nginx, gunicorn, Docker)
-- Automação de backups e rotinas de manutenção
+- Sistemas em PHP/Laravel para clientes, mantidos ao longo de anos (ex.: Formoney, MyPack, Reuters Panel, SA Imóveis)
+- Produtos SaaS próprios sobre o template multi-tenant **Base Tenancy** (Boutique CRM, Easy Integrations)
+- Funis de quizzes para tráfego pago, com rastreamento de UTMs e integração Meta Ads ↔ Google Ad Manager
+- Infraestrutura e deploy com Docker, Nginx/Caddy e rotinas automatizadas de backup
 
-<img src="https://img.shields.io/badge/PHP-0D1117?style=flat-square&logo=php&logoColor=A78BFA" alt="PHP" /> <img src="https://img.shields.io/badge/Laravel-0D1117?style=flat-square&logo=laravel&logoColor=818CF8" alt="Laravel" /> <img src="https://img.shields.io/badge/Docker-0D1117?style=flat-square&logo=docker&logoColor=A78BFA" alt="Docker" /> <img src="https://img.shields.io/badge/Nginx-0D1117?style=flat-square&logo=nginx&logoColor=818CF8" alt="Nginx" />
-
----
-
-<!-- ⚠️ SEÇÃO OPCIONAL — se não houver conquistas reais, REMOVA toda esta seção (incluindo o separador acima) -->
-
-## 🏆 Conquistas
-
-<div align="center">
-
-| Recognition | Details |
-|---|---|
-| 🥇 *(EXEMPLO)* Hackathon XYZ — 1º lugar | Solução de automação para logística, 2024 |
-| ⭐ *(EXEMPLO)* Contribuidor open source | +N PRs aceitos em projetos da comunidade |
-
-</div>
-
----
-
-<!-- ⚠️ SEÇÃO OPCIONAL — se não houver certificações reais, REMOVA toda esta seção (incluindo o separador acima) -->
-
-## 📜 Certificações
-
-<div align="center">
-
-**AWS** <i>(EXEMPLO)</i>
-
-<img src="https://img.shields.io/badge/AWS_Certified_Cloud_Practitioner-6D28D9?style=for-the-badge&logo=amazonwebservices&logoColor=white" alt="AWS CCP (exemplo)" />
-
-**Outros** <i>(EXEMPLO)</i>
-
-<img src="https://img.shields.io/badge/Django_Advanced-4F46E5?style=for-the-badge&logo=django&logoColor=white" alt="Django (exemplo)" />
-
-</div>
-
----
-
-<!-- ⚠️ SEÇÃO OPCIONAL — se não houver perfis reais, REMOVA toda esta seção (incluindo o separador acima) -->
-
-## ⚔️ Perfis de Programação
-
-<div align="center">
-
-<a href="https://leetcode.com/USUARIO"><img src="https://img.shields.io/badge/LeetCode-6D28D9?style=for-the-badge&logo=leetcode&logoColor=white" alt="LeetCode (exemplo)" /></a>
-<a href="https://www.hackerrank.com/USUARIO"><img src="https://img.shields.io/badge/HackerRank-4F46E5?style=for-the-badge&logo=hackerrank&logoColor=white" alt="HackerRank (exemplo)" /></a>
-
-</div>
+<img src="https://img.shields.io/badge/PHP-0D1117?style=flat-square&logo=php&logoColor=A78BFA" alt="PHP" /> <img src="https://img.shields.io/badge/Laravel-0D1117?style=flat-square&logo=laravel&logoColor=818CF8" alt="Laravel" /> <img src="https://img.shields.io/badge/Python-0D1117?style=flat-square&logo=python&logoColor=A78BFA" alt="Python" /> <img src="https://img.shields.io/badge/Docker-0D1117?style=flat-square&logo=docker&logoColor=818CF8" alt="Docker" /> <img src="https://img.shields.io/badge/Nginx-0D1117?style=flat-square&logo=nginx&logoColor=A78BFA" alt="Nginx" />
 
 ---
 
@@ -251,12 +236,14 @@ Desenvolvimento de soluções web sob medida para clientes, incluindo sites inst
 ## 🎯 Foco Atual
 
 ```yaml
-aprendendo:
-  - AI Agents & MCP (automação backed por LLM)     # EXEMPLO — ajustar
 construindo:
-  - Plataforma SaaS multicanal (SMS, WhatsApp, Email)   # EXEMPLO — ajustar
+  - DAOI Educação — aulas ao vivo, loja e assistente de IA
+  - Boutique CRM e novos produtos sobre o Base Tenancy
+aprofundando:
+  - AI Agents & servidores MCP (OAuth, Streamable HTTP)
+  - RAG e copilotos com tool use dentro de produtos SaaS
 explorando:
-  - Uploads diretos para S3 com presigned URLs          # EXEMPLO — ajustar
+  - Apps desktop com Tauri (Rust + React) e chamadas com LiveKit
 aberto_a:
   - Posições Backend / Full Stack Sênior
   - Times remote-first
