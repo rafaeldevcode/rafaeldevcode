@@ -203,16 +203,6 @@ Desenvolvimento de soluções web sob medida para clientes: sistemas internos, p
 
 ---
 
-## 🕒 Hábitos de Código
-
-<div align="center">
-
-<img src="metrics/habits.svg" alt="Hábitos de código" />
-
-</div>
-
----
-
 ## 📈 Atividade de Contribuição
 
 <div align="center">
