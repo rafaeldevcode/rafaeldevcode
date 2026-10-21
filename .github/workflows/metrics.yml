@@ -1,4 +1,4 @@
-# Gera os SVGs de troféus (achievements) e atividade (isocalendar) em metrics/
+# Gera os SVGs de hábitos (habits) e atividade (isocalendar) em metrics/
 name: Generate Metrics
 
 on:
@@ -23,18 +23,20 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:
-      - name: Achievements
+      - name: Habits
         uses: lowlighter/metrics@latest
         with:
-          filename: metrics/achievements.svg
+          filename: metrics/habits.svg
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_message: "chore: update achievements metrics [skip ci]"
+          committer_message: "chore: update habits metrics [skip ci]"
           base: ""
           config_timezone: America/Sao_Paulo
-          plugin_achievements: yes
-          plugin_achievements_display: compact
-          plugin_achievements_threshold: C
-          plugin_achievements_secrets: yes
+          plugin_habits: yes
+          plugin_habits_from: 200
+          plugin_habits_days: 14
+          plugin_habits_facts: yes
+          plugin_habits_charts: yes
+          plugin_habits_trim: yes
 
       - name: Activity calendar
         uses: lowlighter/metrics@latest

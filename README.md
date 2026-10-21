@@ -203,11 +203,11 @@ Desenvolvimento de soluções web sob medida para clientes: sistemas internos, p
 
 ---
 
-## 🏅 Troféus GitHub
+## 🕒 Hábitos de Código
 
 <div align="center">
 
-<img src="metrics/achievements.svg" alt="Troféus GitHub" />
+<img src="metrics/habits.svg" alt="Hábitos de código" />
 
 </div>
 
